@@ -1,268 +1,84 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link rel="stylesheet" href="C:\Users\Kazikas\Desktop\FrontEnd\REPOSITORY\style2.css">
-    <title>nftlanding</title>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
 
-<body>
-    <div class="site">
-        <header>
-            <div class="container">
-                <div class="logo">
-                    <img src="C:\Users\Kazikas\Desktop\FrontEnd\images\logo.png" alt="nftlanding logo">
-                </div>
-                <div class="navigation">
-                    <div class="navigation-items">
-                        <a href="#" class="navigation-item">Features</a>
-                        <a href="#" class="navigation-item">About</a>
-                        <a href="#" class="navigation-item">Launch</a>
-                        <a href="#" class="navigation-item">Sign Up</a>
-                    </div>
-                    <div class="navigation-bars">
-                        <img src="./Document_files/menu.svg" alt="">
-                    </div>
-                </div>
-            </div>
+    <link rel="stylesheet" href="bootstrap.css" />
 
-        </header>
+    <script src="script.js" defer></script>
 
-        <div class="hero">
-            <div class="content-all">
-                <div class="container">
-                    <div class="content">
-                        <div class="announcement">Launching soon</div>
-                        <div class="title">An NFT like no other</div>
-                        <div class="description">Don’t miss out on the release of our new NFT. Sign up below to receive
-                            updates
-                            when
-                            we go live.</div>
-                        <button class="button">Sign Up</button>
-                    </div>
-                    <div class="image-wrapper">
-                        <img src="./Document_files/hero-desktop.svg" alt="nepavykęs pokemonas">
-                    </div>
-                </div>
-            </div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game">
+      <div class="card">
+        <img
+          src="https://thumbs.gfycat.com/DeadlyFondGordonsetter-max-1mb.gif"
+          alt=""
+        />
+        <div class="progress">
+          <div class="playerHp"></div>
         </div>
-
-        <div class="upsell">
-            <div class="container">
-                <div class="content">
-                    <div class="title">Free NFT for early birds</div>
-                    <div class="description">Sign up today and you'll get a free NFT when we launch.</div>
-                </div>
-            </div>
+        <div class="inventory">
+          <div class="weapon" id="sword">
+            <input type="radio" name="weapon" id="radio-sword" />
+            <label for="radio-sword">
+              <img
+                src="https://cdnb.artstation.com/p/assets/images/images/019/231/501/large/dhannie-rampersaud-sword-big.jpg?1562607815"
+                alt="sword"
+              />
+            </label>
+          </div>
+          <div class="weapon" id="bow">
+            <input type="radio" name="weapon" id="radio-bow" />
+            <label for="radio-bow">
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/011/644/561/original/pixel-art-archer-bow-and-arrow-icon-for-8bit-game-on-white-background-vector.jpg"
+                alt=""
+              />
+            </label>
+          </div>
+          <div class="weapon" id="wand">
+            <input type="radio" name="weapon" id="radio-wand" />
+            <label for="radio-wand">
+              <img
+                src="https://dinopixel.com/preload/0120/harry-potter-wand.png"
+                alt=""
+              />
+            </label>
+          </div>
         </div>
+      </div>
 
-        <div class="press">
-            <div class="container">
-                <a href="https://sarunasmazintas.github.io/2023-05-15_Figma/">
-                    <img class="mobile" src="./Document_files/1-mobile.png" alt="Logo 1">
-                    <img class="desktop" src="./Document_files/1.svg" alt="Logo 1">
-                </a>
-                <a href="https://sarunasmazintas.github.io/2023-05-15_Figma/">
-                    <img src="./Document_files/2.svg" alt="Logo 2">
-                </a>
-                <a href="https://sarunasmazintas.github.io/2023-05-15_Figma/">
-                    <img src="./Document_files/3.svg" alt="Logo 3">
-                </a>
-                <a href="https://sarunasmazintas.github.io/2023-05-15_Figma/">
-                    <img src="./Document_files/4.svg" alt="Logo 4">
-                </a>
-                <a href="https://sarunasmazintas.github.io/2023-05-15_Figma/">
-                    <img src="./Document_files/5.svg" alt="Logo 5">
-                </a>
-            </div>
+      <div class="d-flex flex-col j-center space-btw">
+        <h3>Gold: 0</h3>
+        <button>Attack</button>
+
+        <img
+          class="potion"
+          src="https://images.cdn3.stockunlimited.net/preview1300/pixel-art-potion_1959569.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="card">
+        <img
+          class="enemyImg"
+          src="https://media.istockphoto.com/id/1270348689/vector/monster.jpg?s=612x612&w=0&k=20&c=qXkt6QKxrFgPTrDiWX-LHX-aiY3ruBWH2OEymfVAunk="
+          alt=""
+        />
+        <div class="progress">
+          <div class="enemyHp"></div>
         </div>
-
-        <div class="showcase">
-            <div class="container">
-                <div class="title">LE Super Rare Auction</div>
-                <div class="description">We have released four limited edition NFTs early which can be bid on via <a href="https://sarunasmazintas.github.io/2023-05-15_Figma/#">OpenSea</a>.</div>
-
-                <div class="cards">
-                    <div class="card">
-                        <div class="image-wrapper">
-                            <img src="./Document_files/showcase1.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="series">Gloop series</div>
-                            <div class="bid">top bid</div>
-                            <div class="name">Purple Man</div>
-                            <div class="price">
-                                <div class="icon">
-                                    <img src="./Document_files/currencyIcon.png" alt="ETH currency icon">
-                                </div>
-                                <div class="value">2.99 ETH</div>
-                            </div>
-                            <div class="no">12983</div>
-                            <div class="term">1 day left</div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="image-wrapper">
-                            <img src="./Document_files/showcase2.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="series">Gloop series</div>
-                            <div class="bid">top bid</div>
-                            <div class="name">Purple Man</div>
-                            <div class="price">
-                                <div class="icon">
-                                    <img src="./Document_files/currencyIcon.png" alt="ETH currency icon">
-                                </div>
-                                <div class="value">2.99 ETH</div>
-                            </div>
-                            <div class="no">12983</div>
-
-
-                            <div class="term">1 day left</div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="image-wrapper">
-                            <img src="./Document_files/showcase3.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="series">Gloop series</div>
-                            <div class="bid">top bid</div>
-                            <div class="name">Purple Man</div>
-                            <div class="price">
-                                <div class="icon">
-                                    <img src="./Document_files/currencyIcon.png" alt="ETH currency icon">
-                                </div>
-                                <div class="value">2.99 ETH</div>
-                            </div>
-                            <div class="no">12983</div>
-
-
-                            <div class="term">1 day left</div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="image-wrapper">
-                            <img src="./Document_files/showcase4.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="series">Gloop series</div>
-                            <div class="bid">top bid</div>
-                            <div class="name">Purple Man</div>
-                            <div class="price">
-                                <div class="icon">
-                                    <img src="./Document_files/currencyIcon.png" alt="ETH currency icon">
-                                </div>
-                                <div class="value">2.99 ETH</div>
-                            </div>
-                            <div class="no">12983</div>
-
-
-                            <div class="term">1 day left</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="footer-upsell">
-            <div class="horizontal_line"></div>
-            <div class="content-all">
-                <div class="container">
-                    <div class="content">
-                        <div class="announcement">Launching soon</div>
-                        <div class="title">An NFT like no other</div>
-                        <div class="description">Don’t miss out on the release of our new NFT. Sign up below to receive
-                            updates
-                            when
-                            we go live.</div>
-                        <button class="button">Sign Up</button>
-                    </div>
-                    <div class="image-wrapper">
-                        <img src="./Document_files/footer-upsell.png" alt="dama pokemonas">
-                    </div>
-                </div>
-            </div>
-            <div class="horizontal_line"></div>
-        </div>
-        
-
-        <div class="line"></div>
-        <footer>
-            <div class="container">
-                <div class="requisites">
-                    <div class="logo">
-                        <div class="logo-image">
-                            <img src="./Document_files/logo.svg" alt="Logo image">
-                        </div>
-                        <div class="logo-text">nftlanding</div>
-                    </div>
-                    <div class="title">Exclusive NFT Collection</div>
-                    <div class="social-media">
-                        <a href="https://sarunasmazintas.github.io/2023-05-15_Figma/#" class="icon">
-                            <img src="./Document_files/facebook.png" alt="">
-                        </a>
-                        <a href="https://sarunasmazintas.github.io/2023-05-15_Figma/#" class="icon">
-                            <img src="./Document_files/twitter.png" alt="">
-                        </a>
-                        <a href="https://sarunasmazintas.github.io/2023-05-15_Figma/#" class="icon">
-                            <img src="./Document_files/instagram.png" alt="">
-                        </a>
-                        <a href="https://sarunasmazintas.github.io/2023-05-15_Figma/#" class="icon">
-                            <img src="./Document_files/tiktok.png" alt="">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="navigation">
-                    <div class="column">
-                        <div class="name">about</div>
-                        <div class="links">
-                            <a href="https://sarunasmazintas.github.io/2023-05-15_Figma/#">About</a>
-                            <a href="https://sarunasmazintas.github.io/2023-05-15_Figma/#">Terms</a>
-                            <a href="https://sarunasmazintas.github.io/2023-05-15_Figma/#">Legal</a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="name">NFT</div>
-                        <div class="links">
-                            <a href="https://sarunasmazintas.github.io/2023-05-15_Figma/#">OpenSea</a>
-                            <a href="https://sarunasmazintas.github.io/2023-05-15_Figma/#">Marker</a>
-                            <a href="https://sarunasmazintas.github.io/2023-05-15_Figma/#">Learn</a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="name">contact</div>
-                        <div class="links">
-                            <a href="https://sarunasmazintas.github.io/2023-05-15_Figma/#">Press</a>
-                            <a href="https://sarunasmazintas.github.io/2023-05-15_Figma/#">Support</a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="name">social</div>
-                        <div class="links">
-                            <a href="https://sarunasmazintas.github.io/2023-05-15_Figma/#">Twitter</a>
-                            <a href="https://sarunasmazintas.github.io/2023-05-15_Figma/#">Instagram</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="bottom-text">
-                    <div class="copyright">© Copyright 2022 NFTlanding</div>
-                    <div class="launching">Launching August 2022</div>
-                </div>
-            </div>
-        </footer>
+      </div>
     </div>
 
-
-</body></html>
+    <div class="over text-center">
+      <h1>You Lost</h1>
+      <div class="d-flex justify-content-center mt-5">
+        <button class="overButton">PLAY AGAIN</button>
+      </div>
+    </div>
+  </body>
+</html>
