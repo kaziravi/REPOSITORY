@@ -93,5 +93,5 @@
 }
 
 .weapon input[type="radio"]:checked + label {
-  box-shadow: 10px 0 50px 30px rgba(0, 0, 255, 0.5); /* Adjust the glow color and size as desired */
+  box-shadow: 10px 0 50px 30px rgba(0, 0, 255, 0.5);
 }
